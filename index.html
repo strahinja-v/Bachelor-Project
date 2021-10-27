@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web projektovanje u masinstvu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon.ico">
+</head>
+
+<body>
+
+    <header class="container clearFix">
+        <a href="./index.html" class="logo"><img src="./img/logo.png" alt="logo"> </a>
+        <label for="toggle">&#9776;</label>
+        <input type="checkbox" id="toggle" />
+        <div class="main-menu">
+            <ul>
+                <li><a href="#">Početna</a></li>
+                <li><a href="#whatwedo">Šta radimo?</a></li>
+                <li><a href="#heatwall">Kalkulator</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <article>
+        <div class="background-description">
+            <p>Vaš najbolji način za prikaz projkata</p>
+            <h1>Početak nove budućnosti</h1>
+            <button href="#" class="background-purchase-button">
+                <p>Planiranje</p>
+            </button>
+        </div>
+    </article>
+
+    <div class="call-to-action">
+        <div class="border-box">
+            <p>Tražite kvalitetno rešenje po pristupačnoj ceni?</p>
+            <button href="#">Pročitajte naš blog</button>
+        </div>
+    </div>
+
+    <div class="what-we-do" id="whatwedo">
+        <h1>Šta mi radimo?</h1>
+        <p>Obaveštavamo naše klijente i kupce o neverovatnim uslugama i projektima... Dizajnirajte svoje neverovatne
+            ideje...
+        </p>
+    </div>
+
+    <div class="content-portfolio">
+        <div class="content-portfolio-box">
+            <img src="./img/office2 (1).jpg" alt="">
+            <h3>Istraživanje</h3>
+            <p>Naš tim vrši sve vrste istaživanja. Od istraživanja fokus grupa, dubinskih intervjua do opservacija i
+                testiranje upotrebljivosti softvera.
+            </p>
+            <div class="content-portfolio-box-read">
+                <p>Pročitajte više</p>
+                <i class="fas fa-arrow-right"></i>
+            </div>
+        </div>
+
+        <div class="content-portfolio-box">
+            <img src="./img/designs.jpg" alt="">
+            <h3>Savršen dizajn</h3>
+            <p>Ako imate ideju kojoj malo fali do savršenosti, naš tim dizajnera sagledaće vašu ideju i učiniti je kroz
+                nekoliko koraka savršenom. Kombinacijom UX i UI, do savršenog dizajna.
+            </p>
+            <div class="content-portfolio-box-read">
+                <p>Pročitajte više</p>
+                <i class="fas fa-arrow-right"></i>
+            </div>
+        </div>
+
+        <div class="content-portfolio-box">
+            <img src="./img/creative.jpg" alt="">
+            <h3>Kreativne ideje</h3>
+            <p>Tim inženjera i tehničara odlikuje visoka kreativnost, tačnost, rešavanje problema na licu mesta, koja su
+                ujedno i veoma estetska. Softverska rešenja, uvek su na visni zadatka da nekad prevazilaze
+                očekivanja.
+            </p>
+            <div class="content-portfolio-box-read">
+                <p>Pročitajte više</p>
+                <i class="fas fa-arrow-right"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="calculator" id="heatwall">
+        <h1>Kalkulator prolaženja toplote kroz višeslojan ravan zid</h1>
+        <div class="calculator-holder">
+
+            <div class="row">
+                <div class="row-left">
+                    <h6 class="label">Dužina</h6>
+                </div>
+
+                <div class="row-center">
+                    <input class="range" id="lent" type="range" min="0" max="100" value="0" step="1"
+                        onchange="updateLentInput(this.value);">
+                </div>
+
+                <div class="row-right">
+                    <input class="text" id="lentInput" type="text" value="0">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="row-left">
+                    <h6 class="label">Širina</h6>
+                </div>
+
+                <div class="row-center">
+                    <input class="range" id="width" type="range" min="0" max="100" value="0" step="1"
+                        onchange="updateWidthInput(this.value);">
+                </div>
+
+                <div class="row-right">
+                    <input class="text" id="widthInput" type="text" value="0">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="row-left">
+                    <h6 class="label">Unutrašnja temperatura</h6>
+                </div>
+
+                <div class="row-center">
+                    <input class="range" id="inside-temperature" type="range" min="-30" max="60" value="0" step="1"
+                        onchange="updateInsideTemperatureInput(this.value);">
+                </div>
+
+                <div class="row-right">
+                    <input class="text" id="insidetemperatureInput" type="text" value="0">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="row-left">
+                    <h6 class="label">Spoljašnja temperatura</h6>
+                </div>
+
+                <div class="row-center">
+                    <input class="range" id="outside-temperature" type="range" min="-30" max="60" value="0" step="1"
+                        onchange="updateOutsideTemperatureInput(this.value);">
+                </div>
+
+                <div class="row-right">
+                    <input class="text" id="outsidetemperatureInput" type="text" value="0">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="row-left">
+                    <h6 class="label">Alfa Spoljašnja</h6>
+                </div>
+
+                <div class="row-center">
+                    <input class="range" id="alfa-outside" type="range" min="0" max="300" value="0" step="1"
+                        onchange="updateAlfaOutsideInput(this.value);">
+                </div>
+
+                <div class="row-right">
+                    <input class="text" id="alfaoutsideInput" type="text" value="0">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="row-left">
+                    <h6 class="label">Alfa Unutrašnja</h6>
+                </div>
+
+                <div class="row-center">
+                    <input class="range" id="alfa-inside" type="range" min="0" max="300" value="0" step="1"
+                        onchange="updateAlfaInsideInput(this.value);">
+                </div>
+
+                <div class="row-right">
+                    <input class="text" id="alfainsideInput" type="text" value="0">
+                </div>
+            </div>
+
+            <div class="row wall">
+                <div class="row-left">
+                    <h6 class="label">Zid 1</h6>
+                </div>
+
+                <div class="row-center">
+                    <select name="lambda" id="lambda-wall-1" class="dropdown">
+                        <option value="0.361">Beton</option>
+                        <option value="1.512">Beton, armirani</option>
+                        <option value="0.35">Bukva, hrast</option>
+                        <option value="0.362">Cigla</option>
+                        <option value="0.51">Gips</option>
+                        <option value="1.745">Kamen, prirodni</option>
+                        <option value="0.008">Kamen, kotlovski(bogat silikatima)</option>
+                        <option value="1.2">Malter, cementni</option>
+                        <option value="0.7">Malter, krečni</option>
+                        <option value="2.1">Mermer</option>
+                        <option value="0.034">Mineralna vuna</option>
+                        <option value="0.036">Staklena vuna</option>
+                        <option value="0.038">Stiropor</option>
+                        <option value="0.872">Zid od cigle</option>
+                        <option value="0.35">Zid od šuplje cigle</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="row-left">
+                    <h6 class="label">Debljina prvog zida</h6>
+                </div>
+
+                <div class="row-center">
+                    <input class="wall-width" id="wall-width-1" type="range" min="0" max="2" value="0" step="0.01"
+                        onchange="updateWallWidthInput1(this.value);">
+                </div>
+
+                <div class="row-right">
+                    <input class="text" id="wallwidthInput1" type="text" value="0">
+                </div>
+            </div>
+
+            <div class="row wall">
+                <div class="row-left">
+                    <h6 class="label">Zid 2</h6>
+                </div>
+
+                <div class="row-center">
+                    <select name="lambda" id="lambda-wall-2" class="dropdown">
+                        <option value="0.361">Beton</option>
+                        <option value="1.512">Beton, armirani</option>
+                        <option value="0.35">Bukva, hrast</option>
+                        <option value="0.362">Cigla</option>
+                        <option value="0.51">Gips</option>
+                        <option value="1.745">Kamen, prirodni</option>
+                        <option value="0.008">Kamen, kotlovski(bogat silikatima)</option>
+                        <option value="1.2">Malter, cementni</option>
+                        <option value="0.7">Malter, krečni</option>
+                        <option value="2.1">Mermer</option>
+                        <option value="0.034">Mineralna vuna</option>
+                        <option value="0.036">Staklena vuna</option>
+                        <option value="0.038">Stiropor</option>
+                        <option value="0.872">Zid od cigle</option>
+                        <option value="0.35">Zid od šuplje cigle</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="row-left">
+                    <h6 class="label">Debljina drugog zida</h6>
+                </div>
+
+                <div class="row-center">
+                    <input class="wall-width-1" id="wall-width-2" type="range" min="0" max="2" value="0" step="0.01"
+                        onchange="updateWallWidthInput2(this.value);">
+                </div>
+
+                <div class="row-right">
+                    <input class="text" id="wallwidthInput2" type="text" value="0">
+                </div>
+            </div>
+
+            <div class="row wall">
+                <div class="row-left">
+                    <h6 class="label">Zid 3</h6>
+                </div>
+
+                <div class="row-center">
+                    <select name="lambda" id="lambda-wall-3" class="dropdown">
+                        <option value="0.361">Beton</option>
+                        <option value="1.512">Beton, armirani</option>
+                        <option value="0.35">Bukva, hrast</option>
+                        <option value="0.362">Cigla</option>
+                        <option value="0.51">Gips</option>
+                        <option value="1.745">Kamen, prirodni</option>
+                        <option value="0.008">Kamen, kotlovski(bogat silikatima)</option>
+                        <option value="1.2">Malter, cementni</option>
+                        <option value="0.7">Malter, krečni</option>
+                        <option value="2.1">Mermer</option>
+                        <option value="0.034">Mineralna vuna</option>
+                        <option value="0.036">Staklena vuna</option>
+                        <option value="0.038">Stiropor</option>
+                        <option value="0.872">Zid od cigle</option>
+                        <option value="0.35">Zid od šuplje cigle</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="row-left">
+                    <h6 class="label">Debljina trećeg zida</h6>
+                </div>
+
+                <div class="row-center">
+                    <input class="wall-width-1" id="wall-width-3" type="range" min="0" max="2" value="0" step="0.01"
+                        onchange="updateWallWidthInput3(this.value);">
+                </div>
+
+                <div class="row-right">
+                    <input class="text" id="wallwidthInput3" type="text" value="0">
+                </div>
+            </div>
+
+            <div class="row result-section">
+                <div class="row-left" id="rowleftresult">
+                    <h3>Rezultat:</h3>
+                    <h5>Konačno rešenje toplotnog protoka je <span id="result-value"> 0 W </span></h5>
+                </div>
+
+                <div class="row-right" id="rowrightresult">
+                    <button href="#" id="button-result" onclick="findTotal()">Izračunaj</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- contact -->
+    <div class="contact clearFix" id="contact">
+        <h1>Kontakt</h1>
+        <div class="contact-info">
+
+            <div class="contact-information">
+
+                <div class="contact-info-list">
+                    <div class="contact-list-left">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+
+                    <div class="contact-list-right">
+                        <p>Univerzitet u Beogradu, Mašinski fakultet
+                            <br>
+                            Kraljice Marije 16, 11260 Beograd
+                            <br>
+                            Srbija
+                        </p>
+                    </div>
+                </div>
+
+                <div class="contact-info-list">
+                    <div class="contact-list-left">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <div class="contact-list-right">
+                        <p>mf@mas.bg.ac.rs
+                            <br>
+                            dekan@mas.bg.ac.rs
+                            <br>
+                            (+381 11) 3302-205
+                        </p>
+                    </div>
+                </div>
+
+                <div class="contact-info-list">
+                    <div class="contact-list-left">
+                        <i class="far fa-clock"></i>
+                    </div>
+                    <div class="contact-list-right">
+                        <p>Ponedeljak - Petak: od 08h do 23h
+                            <br>
+                            Subota - Nedelja: od 08h do 16h
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-global">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2830.7341594991785!2d20.478415645507802!3d44.80660611783652!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x14979c1ab4d55851!2z0JzQsNGI0LjQvdGB0LrQuCDRhNCw0LrRg9C70YLQtdGCINCj0L3QuNCy0LXRgNC30LjRgtC10YLQsCDRgyDQkdC10L7Qs9GA0LDQtNGD!5e0!3m2!1ssr!2sus!4v1631804869790!5m2!1ssr!2sus"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <footer>
+        <div class="footer-discription">
+            @2021
+            <a href="#">Web Projektovanje u Mašinstvu</a>
+            , Sva prava zadržana.
+        </div>
+
+        <div class="footer-social">
+            <span>
+                <a href="#"><i class="fab fa-facebook-square"></i></a>
+            </span>
+            <span>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </span>
+            <span>
+                <a href="#"><i class="fab fa-twitter-square"></i></a>
+            </span>
+            <span>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </span>
+        </div>
+    </footer>
+
+    <script src="./calculator.js"></script>
+    <script src="https://kit.fontawesome.com/10686cc83b.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

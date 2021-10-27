@@ -1,0 +1,254 @@
+/* MAIN MENU HAMBURGER */
+
+@media only screen and (max-width: 1007px) {
+  label {
+    display: block;
+    cursor: pointer;
+  }
+  .main-menu {
+    border: none;
+    width: 100%;
+  }
+  .main-menu ul {
+    text-align: center;
+    display: none;
+    margin-bottom: 15px;
+  }
+  .main-menu li {
+    border: 0;
+  }
+  .main-menu a {
+    display: block;
+    margin: 0;
+  }
+  #toggle:checked + .main-menu ul {
+    display: block;
+  }
+  header label {
+    float: right;
+    font-size: 40px;
+    margin-top: 20px;
+    color: #fff;
+  }
+}
+
+/* HEADER SECTION */
+
+@media only screen and (max-width: 1007px) and (min-width: 504px) {
+  .top-menu {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 503px) {
+  .top-menu {
+    display: none;
+  }
+}
+
+/* LAPTOP */
+@media only screen and (max-width: 1366px) {
+  .contact-global iframe {
+    width: 443px;
+    height: 430px;
+    position: relative;
+  }
+
+  footer .footer-discription {
+    padding: 0 0 0 28%;
+  }
+}
+
+/* MAC */
+
+@media only screen and (max-width: 1280px) {
+  .content-portfolio-box img {
+    height: 200px;
+  }
+
+  .calculator .row-right input {
+    padding: 0 10px;
+  }
+
+  .contact {
+    margin: 90px 0 0 0;
+  }
+
+  .contact .contact-information {
+    margin: 10% 0 0 0;
+    padding: 0 10px;
+  }
+
+  footer .footer-discription {
+    padding: 0 0 0 24%;
+  }
+}
+
+/* iPad Pro  */
+
+@media only screen and (max-width: 1024px) {
+  .call-to-action .border-box button {
+    margin: 0 -1%;
+  }
+
+  .content-portfolio-box img {
+    height: 170px;
+  }
+
+  .content-portfolio-box h3 {
+    font-size: 20px;
+  }
+
+  .content-portfolio {
+    margin: 0 10%;
+  }
+
+  .calculator {
+    margin: 0px 10%;
+  }
+
+  #result-value:before {
+    display: none;
+  }
+
+  .calculator .row-right {
+    padding: 0 15px;
+  }
+
+  .contact {
+    margin: -22px 0px 0px;
+  }
+
+  .contact .contact-info {
+    padding-top: 50px;
+  }
+
+  .contact .contact-information {
+    margin: 0;
+  }
+
+  .contact h1 {
+    margin: 0 0 50px 0;
+  }
+
+  .contact-global iframe {
+    width: 100%;
+    height: 425px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  article {
+    height: 750px;
+  }
+  .call-to-action {
+    margin: 0 10%;
+  }
+
+  .contact .contact-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact .contact-information {
+    width: 100%;
+    display: block;
+  }
+
+  .contact .contact-global {
+    width: 100%;
+    display: block;
+    margin-bottom: 80px;
+  }
+
+  .contact .contact-info .contact-information .contact-info-list {
+    margin: 5% 9% 9% 0 !important;
+  }
+
+  footer .footer-social {
+    width: 100%;
+    text-align: center;
+  }
+
+  footer .footer-discription {
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  article .background-description {
+    margin: 20% 0 10% 10%;
+  }
+  article .background-description h1 {
+    font-size: 40px;
+    line-height: 56px;
+  }
+
+  article .background-description p {
+    font-size: 15px;
+  }
+
+  article {
+    height: 550px;
+  }
+
+  .content-portfolio-box {
+    width: 100%;
+    max-width: 100%;
+    float: unset;
+    margin: 13% 2% 100px 0;
+  }
+
+  .calculator .row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .calculator .row-left {
+    width: 100%;
+  }
+
+  .calculator .row-center {
+    width: 100%;
+    height: 100px;
+  }
+
+  .calculator .row-right {
+    width: 100%;
+    height: 100px;
+  }
+
+  .calculator .wall .row-center {
+    width: 100%;
+  }
+
+  #rowleftresult {
+    width: 100%;
+  }
+
+  #rowrightresult {
+    width: 100%;
+    justify-content: center;
+  }
+
+  #result-value:before {
+    display: none;
+  }
+
+  #result-value {
+    display: block;
+    margin-top: 20px;
+  }
+
+  .call-to-action .border-box {
+    flex-direction: column;
+  }
+
+  .call-to-action .border-box p {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+}
